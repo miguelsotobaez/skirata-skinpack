@@ -1,10 +1,15 @@
 TITLE: Skirata Mandalorian Skinpack V3.0
 
 AUTHOR: Mhoker
+
 E-MAIL: mhoker@msn.com
+
 FILENAME: skirata_skinpack_V3.0
+
 DATE CREATED: 30/05/2010
+
 DATE RELEASED:03/06/2010
+
 DATE UPDATED:01/04/2020
 
 CREDITS: Full Credit For this goes to Mars Marshall since he made the model.
