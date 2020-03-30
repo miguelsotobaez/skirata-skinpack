@@ -1,0 +1,9 @@
+{
+name		"Gotab"
+model		Gotab
+color1		3
+color2		2
+saber1		"single_1"
+saber2		"single_1"
+personality	/botfiles/Gotab.jkb
+}

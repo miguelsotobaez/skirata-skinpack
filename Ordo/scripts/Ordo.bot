@@ -1,0 +1,7 @@
+{
+name		"Ordo"
+model		Ordo
+color1		0
+saber1		"single_1"
+personality	/botfiles/Ordo.jkb
+}

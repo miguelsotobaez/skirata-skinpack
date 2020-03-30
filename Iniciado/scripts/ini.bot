@@ -1,0 +1,7 @@
+{
+name		"Ini"
+model		Ini
+color1		4
+saber1		"Single_1"
+personality	/botfiles/Ini.jkb
+}

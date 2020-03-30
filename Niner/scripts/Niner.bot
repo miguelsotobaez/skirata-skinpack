@@ -1,0 +1,7 @@
+{
+name		"Niner"
+model		Niner
+color1		0
+saber1		"single_1"
+personality	/botfiles/Niner.jkb
+}

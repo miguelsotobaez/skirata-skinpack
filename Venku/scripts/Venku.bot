@@ -1,0 +1,7 @@
+{
+name		"Venku"
+model		Venku
+color1		2
+saber1		"single_1"
+personality	/botfiles/Venku.jkb
+}
