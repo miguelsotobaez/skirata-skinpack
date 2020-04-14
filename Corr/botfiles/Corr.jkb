@@ -33,7 +33,8 @@ GeneralBotInfo
 				//if 1, bot will not run just because it's forced to use a saber
 
 	//don't exceed 20 force points total
-	forceinfo		7-2-000030332000030330
+	forceinfo		7-1-300030000330000330
+	//forceinfo		7-2-000030332000030330
 	//			   	    hlspptglrpattdssss
 	//			        eepuueriarbeereaaa
 	//			        aveslliggosaaaebbb
@@ -68,24 +69,21 @@ BotWeaponWeights
 	WP_DET_PACK		0
 }
 
-//Alora has no emotional attachments
-
-
 //all groups below here will be read in as chat sections
 BEGIN_CHAT_GROUPS
 
 Died
 {	
-	...
+	Copaani mirshmure'cye, vod?
 }
 
 Killed
 {
-	Hmph.
+	Haatyc or'arue jate'shya ori'sol aru'ike nuhaatyc
 }
 
 
 OrderAccepted
 {
-	Yes, right away.
+	Hukaat'kama
 }
