@@ -1,9 +1,0 @@
-{
-name		"Kal"
-model		Kal
-color1		1
-color2		1
-saber1		"single_1"
-saber2		"single_1"
-personality	/botfiles/Kal.jkb
-}

@@ -14,7 +14,7 @@ r_gauntlet,models/players/corr/robearm.tga
 l_leg,models/players/corr/armor.tga
 r_leg,models/players/corr/armor.tga
 l_arm,models/players/corr/torso.tga
-r_arm,models/players/corr/torso.jptgag
+r_arm,models/players/corr/torso.tga
 l_hand,models/players/corr/torso.tga
 r_hand,models/players/corr/torso.tga
 r_k_pad,models/players/corr/robearm.tga
