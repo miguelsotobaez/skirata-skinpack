@@ -32,7 +32,7 @@ munin
 	rank			captain
 	playerTeam		TEAM_ENEMY
 	enemyTeam		TEAM_PLAYER
-	class			CLASS_munin
+	class			CLASS_MUNIN
 	walkSpeed		80
 	runSpeed		250
 	snd				munin
