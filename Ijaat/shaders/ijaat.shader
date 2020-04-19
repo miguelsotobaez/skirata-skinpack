@@ -1,78 +1,3 @@
-models/players/ijaat/icon_default
-{
-	qer_editorimage	models/players/ijaat/icon_over
-    {
-        map models/players/ijaat/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ijaat/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ijaat/icon_default models/players/ijaat/icon_default
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ijaat/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/ijaat/icon_red
-{
-	qer_editorimage	models/players/ijaat/icon_over
-    {
-        map models/players/ijaat/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ijaat/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ijaat/icon_red models/players/ijaat/icon_red
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ijaat/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/ijaat/icon_blue
-{
-	qer_editorimage	models/players/ijaat/icon_over
-    {
-        map models/players/ijaat/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ijaat/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ijaat/icon_blue models/players/ijaat/icon_blue
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ijaat/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
 models/players/ijaat/Helmet
 {        
 	{
@@ -86,9 +11,9 @@ models/players/ijaat/Helmet
 		tcGen environment 
 	}
 	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
 	}
 	{
 		map models/players/ijaat/Helmet
@@ -97,24 +22,159 @@ models/players/ijaat/Helmet
 	}
 	{
 		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
 	}
-        {
-                map models/players/ijaat/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
+    {
+        map models/players/ijaat/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
 }
 
+models/players/ijaat/Helmet_red
+{        
+	{
+		map models/players/ijaat/Helmet_red
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/ijaat/Helmet_red
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/ijaat/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/ijaat/Helmet_blue
+{        
+	{
+		map models/players/ijaat/Helmet_blue
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/ijaat/Helmet_blue
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/ijaat/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/ijaat/armor
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ijaat/armor_hips.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ijaat/armor.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ijaat/armor_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ijaat/armor_hips_red.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ijaat/armor_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ijaat/armor_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ijaat/armor_hips_blue.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ijaat/armor_blue.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
 
 models/players/ijaat/torso
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ijaat/torso_armor.jpg
+        map models/players/ijaat/torso_legs.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -131,12 +191,12 @@ models/players/ijaat/torso
 
 }
 
-models/players/ijaat/hips
+models/players/ijaat/torso_red
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ijaat/hips_armor.jpg
+        map models/players/ijaat/torso_legs_red.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -146,19 +206,19 @@ models/players/ijaat/hips
         tcGen environment
     }
     {
-        map models/players/ijaat/hips.tga
+        map models/players/ijaat/torso_red.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/ijaat/legs
+models/players/ijaat/torso_blue
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ijaat/legs_armor.jpg
+        map models/players/ijaat/torso_legs_blue.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -168,19 +228,19 @@ models/players/ijaat/legs
         tcGen environment
     }
     {
-        map models/players/ijaat/legs.tga
+        map models/players/ijaat/torso_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/ijaat/hands
+models/players/ijaat/robearm
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ijaat/hands_armor.jpg
+        map models/players/ijaat/gauntlet.png
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -190,7 +250,51 @@ models/players/ijaat/hands
         tcGen environment
     }
     {
-        map models/players/ijaat/hands.tga
+        map models/players/ijaat/robearm.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ijaat/robearm_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ijaat/gauntlet_red.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ijaat/robearm_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ijaat/robearm_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ijaat/gauntlet_blue.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ijaat/robearm_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
@@ -221,130 +325,6 @@ q3map_nolightmap
     
 }
 
-models/players/ijaat/Helmet_red
-{        
-	{
-		map models/players/ijaat/Helmet_red
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-		blendfunc add
-		rgbGen lightingDiffuse
-		tcGen environment 
-	}
-	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
-	}
-	{
-		map models/players/ijaat/Helmet_red
-		blendfunc blend
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/ijaat/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-
-models/players/ijaat/torso_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/ijaat/torso_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/ijaat/torso_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/ijaat/hips_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/ijaat/hips_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/ijaat/hips_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/ijaat/legs_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/ijaat/legs_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/ijaat/legs_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/ijaat/hands_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/ijaat/hands_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/ijaat/hands_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
 models/players/ijaat/jetpack_red
 {
 q3map_nolightmap
@@ -369,81 +349,26 @@ q3map_nolightmap
     
 }
 
-models/players/ijaat/extragear
+models/players/ijaat/jetpack_blue
 {
-	q3map_nolightmap
+q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ijaat/extragear.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/ijaat/snipergogs
-{
-    {
-		map models/players/ijaat/snipergogs
+		map models/players/ijaat/jetpack_blue
 		blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
 	}
 	{
 		map GFX/Effects/skirata
                 blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        tcGen environment
 	}
         {
-                map models/players/ijaat/snipergogs_glow
+                map models/players/ijaat/jetpack_glow
                 blendFunc GL_ONE GL_ONE
                 glow
                 rgbGen identity
         }
-}
 
-models/players/ijaat/shoulder
-{
-    {
-        map models/players/ijaat/Shoulder
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ijaat/Shoulder_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/ijaat/face
-{
-    {
-        map models/players/ijaat/face
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ijaat/face_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/ijaat/comm
-{
-    {
-        map models/players/ijaat/comm
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ijaat/comm_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
+    
 }

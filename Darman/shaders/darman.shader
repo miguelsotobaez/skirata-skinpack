@@ -1,78 +1,3 @@
-models/players/darman/icon_default
-{
-	qer_editorimage	models/players/darman/icon_over
-    {
-        map models/players/darman/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/darman/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/darman/icon_default models/players/darman/icon_default
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/darman/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/darman/icon_red
-{
-	qer_editorimage	models/players/darman/icon_over
-    {
-        map models/players/darman/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/darman/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/darman/icon_red models/players/darman/icon_red
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/darman/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/darman/icon_blue
-{
-	qer_editorimage	models/players/darman/icon_over
-    {
-        map models/players/darman/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/darman/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/darman/icon_blue models/players/darman/icon_blue
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/darman/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
 models/players/darman/Helmet
 {        
 	{
@@ -86,9 +11,9 @@ models/players/darman/Helmet
 		tcGen environment 
 	}
 	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
 	}
 	{
 		map models/players/darman/Helmet
@@ -97,15 +22,151 @@ models/players/darman/Helmet
 	}
 	{
 		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
 	}
-        {
-                map models/players/darman/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
+    {
+        map models/players/darman/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/darman/Helmet_red
+{        
+	{
+		map models/players/darman/Helmet_red
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/darman/Helmet_red
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/darman/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/darman/Helmet_blue
+{        
+	{
+		map models/players/darman/Helmet_blue
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/darman/Helmet_blue
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/darman/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/darman/armor
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/darman/armor_hips.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/darman/armor.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/darman/armor_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/darman/armor_hips_red.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/darman/armor_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/darman/armor_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/darman/armor_hips_blue.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/darman/armor_blue.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
 }
 
 models/players/darman/torso
@@ -113,7 +174,7 @@ models/players/darman/torso
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/darman/torso_armor.jpg
+        map models/players/darman/torso_legs.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -130,12 +191,12 @@ models/players/darman/torso
 
 }
 
-models/players/darman/hips
+models/players/darman/torso_red
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/darman/hips_armor.jpg
+        map models/players/darman/torso_legs_red.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -145,19 +206,19 @@ models/players/darman/hips
         tcGen environment
     }
     {
-        map models/players/darman/hips.tga
+        map models/players/darman/torso_red.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/darman/legs
+models/players/darman/torso_blue
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/darman/legs_armor.jpg
+        map models/players/darman/torso_legs_blue.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -167,19 +228,19 @@ models/players/darman/legs
         tcGen environment
     }
     {
-        map models/players/darman/legs.tga
+        map models/players/darman/torso_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/darman/hands
+models/players/darman/robearm
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/darman/hands_armor.jpg
+        map models/players/darman/gauntlet.png
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -189,7 +250,51 @@ models/players/darman/hands
         tcGen environment
     }
     {
-        map models/players/darman/hands.tga
+        map models/players/darman/robearm.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/darman/robearm_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/darman/gauntlet_red.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/darman/robearm_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/darman/robearm_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/darman/gauntlet_blue.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/darman/robearm_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
@@ -220,129 +325,6 @@ q3map_nolightmap
     
 }
 
-models/players/darman/Helmet_red
-{        
-	{
-		map models/players/darman/Helmet_red
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-		blendfunc add
-		rgbGen lightingDiffuse
-		tcGen environment 
-	}
-	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
-	}
-	{
-		map models/players/darman/Helmet_red
-		blendfunc blend
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/darman/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-models/players/darman/torso_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/torso_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/torso_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/darman/hips_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/hips_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/hips_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/darman/legs_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/legs_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/legs_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/darman/hands_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/hands_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/hands_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
 models/players/darman/jetpack_red
 {
 q3map_nolightmap
@@ -367,130 +349,6 @@ q3map_nolightmap
     
 }
 
-models/players/darman/Helmet_blue
-{        
-	{
-		map models/players/darman/Helmet_blue
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-		blendfunc add
-		rgbGen lightingDiffuse
-		tcGen environment 
-	}
-	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
-	}
-	{
-		map models/players/darman/Helmet_blue
-		blendfunc blend
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/darman/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-
-models/players/darman/torso_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/torso_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/torso_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/darman/hips_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/hips_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/hips_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/darman/legs_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/legs_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/legs_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/darman/hands_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/hands_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/darman/hands_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
 models/players/darman/jetpack_blue
 {
 q3map_nolightmap
@@ -513,117 +371,4 @@ q3map_nolightmap
         }
 
     
-}
-
-models/players/darman/extragear
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/extragear.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/darman/extragear_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/extragear_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/darman/extragear_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/darman/extragear_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/darman/snipergogs
-{
-    {
-		map models/players/darman/snipergogs
-		blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/darman/snipergogs_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-models/players/darman/shoulder
-{
-    {
-        map models/players/darman/Shoulder
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/darman/Shoulder_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/darman/face
-{
-    {
-        map models/players/darman/face
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/darman/face_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/darman/comm
-{
-    {
-        map models/players/darman/comm
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/darman/comm_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
 }

@@ -1,78 +1,3 @@
-models/players/walon_vau/icon_default
-{
-	qer_editorimage	models/players/walon_vau/icon_over
-    {
-        map models/players/walon_vau/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/walon_vau/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/walon_vau/icon_default models/players/walon_vau/icon_default
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/walon_vau/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/walon_vau/icon_red
-{
-	qer_editorimage	models/players/walon_vau/icon_over
-    {
-        map models/players/walon_vau/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/walon_vau/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/walon_vau/icon_red models/players/walon_vau/icon_red
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/walon_vau/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/walon_vau/icon_blue
-{
-	qer_editorimage	models/players/walon_vau/icon_over
-    {
-        map models/players/walon_vau/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/walon_vau/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/walon_vau/icon_blue models/players/walon_vau/icon_blue
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/walon_vau/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
 models/players/walon_vau/Helmet
 {        
 	{
@@ -86,9 +11,9 @@ models/players/walon_vau/Helmet
 		tcGen environment 
 	}
 	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
 	}
 	{
 		map models/players/walon_vau/Helmet
@@ -97,15 +22,151 @@ models/players/walon_vau/Helmet
 	}
 	{
 		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
 	}
-        {
-                map models/players/walon_vau/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
+    {
+        map models/players/walon_vau/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/walon_vau/Helmet_red
+{        
+	{
+		map models/players/walon_vau/Helmet_red
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/walon_vau/Helmet_red
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/walon_vau/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/walon_vau/Helmet_blue
+{        
+	{
+		map models/players/walon_vau/Helmet_blue
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/walon_vau/Helmet_blue
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/walon_vau/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/walon_vau/armor
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/walon_vau/armor_hips.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/walon_vau/armor.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/walon_vau/armor_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/walon_vau/armor_hips_red.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/walon_vau/armor_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/walon_vau/armor_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/walon_vau/armor_hips_blue.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/walon_vau/armor_blue.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
 }
 
 models/players/walon_vau/torso
@@ -113,7 +174,7 @@ models/players/walon_vau/torso
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/walon_vau/torso_armor.jpg
+        map models/players/walon_vau/torso_legs.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -130,12 +191,12 @@ models/players/walon_vau/torso
 
 }
 
-models/players/walon_vau/hips
+models/players/walon_vau/torso_red
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/walon_vau/hips_armor.jpg
+        map models/players/walon_vau/torso_legs_red.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -145,19 +206,19 @@ models/players/walon_vau/hips
         tcGen environment
     }
     {
-        map models/players/walon_vau/hips.tga
+        map models/players/walon_vau/torso_red.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/walon_vau/legs
+models/players/walon_vau/torso_blue
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/walon_vau/legs_armor.jpg
+        map models/players/walon_vau/torso_legs_blue.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -167,19 +228,19 @@ models/players/walon_vau/legs
         tcGen environment
     }
     {
-        map models/players/walon_vau/legs.tga
+        map models/players/walon_vau/torso_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/walon_vau/hands
+models/players/walon_vau/robearm
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/walon_vau/hands_armor.jpg
+        map models/players/walon_vau/gauntlet.png
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -189,7 +250,51 @@ models/players/walon_vau/hands
         tcGen environment
     }
     {
-        map models/players/walon_vau/hands.tga
+        map models/players/walon_vau/robearm.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/walon_vau/robearm_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/walon_vau/gauntlet_red.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/walon_vau/robearm_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/walon_vau/robearm_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/walon_vau/gauntlet_blue.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/walon_vau/robearm_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
@@ -220,108 +325,6 @@ q3map_nolightmap
     
 }
 
-models/players/walon_vau/Helmet_red
-{        
-	{
-		map models/players/walon_vau/Helmet_red
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-		blendfunc add
-		rgbGen lightingDiffuse
-		tcGen environment 
-	}
-	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
-	}
-	{
-		map models/players/walon_vau/Helmet_red
-		blendfunc blend
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/walon_vau/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-models/players/walon_vau/torso_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/torso_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/walon_vau/torso_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/walon_vau/hips_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/hips_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/walon_vau/hips_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/walon_vau/legs_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/legs_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/walon_vau/legs_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-
 models/players/walon_vau/jetpack_red
 {
 q3map_nolightmap
@@ -346,110 +349,6 @@ q3map_nolightmap
     
 }
 
-models/players/walon_vau/Helmet_blue
-{        
-	{
-		map models/players/walon_vau/Helmet_blue
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-		blendfunc add
-		rgbGen lightingDiffuse
-		tcGen environment 
-	}
-	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
-	}
-	{
-		map models/players/walon_vau/Helmet_blue
-		blendfunc blend
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/walon_vau/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-
-models/players/walon_vau/torso_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/torso_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/walon_vau/torso_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/walon_vau/hips_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/hips_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/walon_vau/hips_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/walon_vau/legs_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/legs_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/walon_vau/legs_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-
-
 models/players/walon_vau/jetpack_blue
 {
 q3map_nolightmap
@@ -472,117 +371,4 @@ q3map_nolightmap
         }
 
     
-}
-
-models/players/walon_vau/extragear
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/extragear.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/walon_vau/extragear_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/extragear_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/walon_vau/extragear_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/walon_vau/extragear_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/walon_vau/snipergogs
-{
-    {
-		map models/players/walon_vau/snipergogs
-		blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/walon_vau/snipergogs_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-models/players/walon_vau/shoulder
-{
-    {
-        map models/players/walon_vau/Shoulder
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/walon_vau/Shoulder_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/walon_vau/face
-{
-    {
-        map models/players/walon_vau/face
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/walon_vau/face_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/walon_vau/comm
-{
-    {
-        map models/players/walon_vau/comm
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/walon_vau/comm_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
 }

@@ -1,78 +1,3 @@
-models/players/atin/icon_default
-{
-	qer_editorimage	models/players/atin/icon_over
-    {
-        map models/players/atin/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/atin/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/atin/icon_default models/players/atin/icon_default
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/atin/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/atin/icon_red
-{
-	qer_editorimage	models/players/atin/icon_over
-    {
-        map models/players/atin/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/atin/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/atin/icon_red models/players/atin/icon_red
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/atin/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/atin/icon_blue
-{
-	qer_editorimage	models/players/atin/icon_over
-    {
-        map models/players/atin/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/atin/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/atin/icon_blue models/players/atin/icon_blue
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/atin/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
 models/players/atin/Helmet
 {        
 	{
@@ -86,9 +11,9 @@ models/players/atin/Helmet
 		tcGen environment 
 	}
 	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
 	}
 	{
 		map models/players/atin/Helmet
@@ -97,15 +22,151 @@ models/players/atin/Helmet
 	}
 	{
 		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
 	}
-        {
-                map models/players/atin/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
+    {
+        map models/players/atin/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/atin/Helmet_red
+{        
+	{
+		map models/players/atin/Helmet_red
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/atin/Helmet_red
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/atin/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/atin/Helmet_blue
+{        
+	{
+		map models/players/atin/Helmet_blue
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/atin/Helmet_blue
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/atin/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/atin/armor
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/atin/armor_hips.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/atin/armor.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/atin/armor_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/atin/armor_hips_red.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/atin/armor_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/atin/armor_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/atin/armor_hips_blue.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/atin/armor_blue.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
 }
 
 models/players/atin/torso
@@ -113,7 +174,7 @@ models/players/atin/torso
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/atin/torso_armor.jpg
+        map models/players/atin/torso_legs.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -130,12 +191,12 @@ models/players/atin/torso
 
 }
 
-models/players/atin/hips
+models/players/atin/torso_red
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/atin/hips_armor.jpg
+        map models/players/atin/torso_legs_red.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -145,19 +206,19 @@ models/players/atin/hips
         tcGen environment
     }
     {
-        map models/players/atin/hips.tga
+        map models/players/atin/torso_red.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/atin/legs
+models/players/atin/torso_blue
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/atin/legs_armor.jpg
+        map models/players/atin/torso_legs_blue.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -167,19 +228,19 @@ models/players/atin/legs
         tcGen environment
     }
     {
-        map models/players/atin/legs.tga
+        map models/players/atin/torso_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/atin/hands
+models/players/atin/robearm
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/atin/hands_armor.jpg
+        map models/players/atin/gauntlet.png
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -189,7 +250,51 @@ models/players/atin/hands
         tcGen environment
     }
     {
-        map models/players/atin/hands.tga
+        map models/players/atin/robearm.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/atin/robearm_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/atin/gauntlet_red.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/atin/robearm_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/atin/robearm_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/atin/gauntlet_blue.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/atin/robearm_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
@@ -220,131 +325,6 @@ q3map_nolightmap
     
 }
 
-
-models/players/atin/Helmet_red
-{        
-	{
-		map models/players/atin/Helmet_red
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-		blendfunc add
-		rgbGen lightingDiffuse
-		tcGen environment 
-	}
-	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
-	}
-	{
-		map models/players/atin/Helmet_red
-		blendfunc blend
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/atin/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-
-models/players/atin/torso_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/atin/torso_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/atin/torso_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/atin/hips_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/atin/hips_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/atin/hips_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/atin/legs_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/atin/legs_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/atin/legs_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/atin/hands_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/atin/hands_armor_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/atin/hands_red.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
 models/players/atin/jetpack_red
 {
 q3map_nolightmap
@@ -369,98 +349,26 @@ q3map_nolightmap
     
 }
 
-models/players/atin/extragear
+models/players/atin/jetpack_blue
 {
-	q3map_nolightmap
+q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/atin/extragear.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/atin/extragear_red
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/atin/extragear_red.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/atin/snipergogs
-{
-    {
-		map models/players/atin/snipergogs
+		map models/players/atin/jetpack_blue
 		blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
 	}
 	{
 		map GFX/Effects/skirata
                 blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        tcGen environment
 	}
         {
-                map models/players/atin/snipergogs_glow
+                map models/players/atin/jetpack_glow
                 blendFunc GL_ONE GL_ONE
                 glow
                 rgbGen identity
         }
-}
 
-models/players/atin/shoulder
-{
-    {
-        map models/players/atin/Shoulder
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/atin/Shoulder_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/atin/face
-{
-    {
-        map models/players/atin/face
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/atin/face_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/atin/comm
-{
-    {
-        map models/players/atin/comm
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/atin/comm_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
+    
 }

@@ -1,78 +1,3 @@
-models/players/ordo/icon_default
-{
-	qer_editorimage	models/players/ordo/icon_over
-    {
-        map models/players/ordo/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ordo/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ordo/icon_default models/players/ordo/icon_default
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ordo/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/ordo/icon_red
-{
-	qer_editorimage	models/players/ordo/icon_over
-    {
-        map models/players/ordo/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ordo/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ordo/icon_red models/players/ordo/icon_red
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ordo/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/ordo/icon_blue
-{
-	qer_editorimage	models/players/ordo/icon_over
-    {
-        map models/players/ordo/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ordo/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ordo/icon_blue models/players/ordo/icon_blue
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ordo/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
 models/players/ordo/Helmet
 {        
 	{
@@ -86,9 +11,9 @@ models/players/ordo/Helmet
 		tcGen environment 
 	}
 	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
 	}
 	{
 		map models/players/ordo/Helmet
@@ -97,15 +22,151 @@ models/players/ordo/Helmet
 	}
 	{
 		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
 	}
-        {
-                map models/players/ordo/Helmet_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
+    {
+        map models/players/ordo/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/ordo/Helmet_red
+{        
+	{
+		map models/players/ordo/Helmet_red
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/ordo/Helmet_red
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/ordo/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/ordo/Helmet_blue
+{        
+	{
+		map models/players/ordo/Helmet_blue
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+		blendfunc add
+		rgbGen lightingDiffuse
+		tcGen environment 
+	}
+	{
+        map GFX/Effects/visionn_glow
+        blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
+        tcMod scroll 3 0.5
+	}
+	{
+		map models/players/ordo/Helmet_blue
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+    {
+        map models/players/ordo/Helmet_glow
+        blendFunc GL_ONE GL_ONE
+        glow
+        rgbGen identity
+    }
+}
+
+models/players/ordo/armor
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ordo/armor_hips.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ordo/armor.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ordo/armor_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ordo/armor_hips_red.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ordo/armor_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ordo/armor_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ordo/armor_hips_blue.jpg
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ordo/armor_blue.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	    rgbGen lightingDiffuse
+    }
+
 }
 
 models/players/ordo/torso
@@ -113,7 +174,7 @@ models/players/ordo/torso
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ordo/torso_armor.jpg
+        map models/players/ordo/torso_legs.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -130,12 +191,12 @@ models/players/ordo/torso
 
 }
 
-models/players/ordo/hips
+models/players/ordo/torso_red
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ordo/hips_armor.jpg
+        map models/players/ordo/torso_legs_red.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -145,19 +206,19 @@ models/players/ordo/hips
         tcGen environment
     }
     {
-        map models/players/ordo/hips.tga
+        map models/players/ordo/torso_red.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/ordo/legs
+models/players/ordo/torso_blue
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ordo/legs_armor.jpg
+        map models/players/ordo/torso_legs_blue.jpg
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -167,19 +228,19 @@ models/players/ordo/legs
         tcGen environment
     }
     {
-        map models/players/ordo/legs.tga
+        map models/players/ordo/torso_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
 
 }
 
-models/players/ordo/hands
+models/players/ordo/robearm
 {
 	q3map_nolightmap
 	q3map_onlyvertexlighting
     {
-        map models/players/ordo/hands_armor.jpg
+        map models/players/ordo/gauntlet.png
         blendFunc GL_ONE GL_ZERO
         rgbGen lightingDiffuse
     }
@@ -189,7 +250,51 @@ models/players/ordo/hands
         tcGen environment
     }
     {
-        map models/players/ordo/hands.tga
+        map models/players/ordo/robearm.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ordo/robearm_red
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ordo/gauntlet_red.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ordo/robearm_red.tga
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+	rgbGen lightingDiffuse
+    }
+
+}
+
+models/players/ordo/robearm_blue
+{
+	q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+        map models/players/ordo/gauntlet_blue.png
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map gfx/effects/skirata
+        blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+    }
+    {
+        map models/players/ordo/robearm_blue.tga
         blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 	rgbGen lightingDiffuse
     }
@@ -220,84 +325,28 @@ q3map_nolightmap
     
 }
 
-
-models/players/ordo/Helmet_blue
-{        
-	{
-		map models/players/ordo/Helmet_blue
-		rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-		blendfunc add
-		rgbGen lightingDiffuse
-		tcGen environment 
-	}
-	{
-                map GFX/Effects/visionn_glow
-                blendFunc GL_SRC_ALPHA GL_SRC_ALPHA
-                tcMod scroll 3 0.5
-	}
-	{
-		map models/players/ordo/Helmet_blue
-		blendfunc blend
-		rgbGen lightingDiffuse
+models/players/ordo/jetpack_red
+{
+q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+		map models/players/ordo/jetpack_red
+		blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
 	}
 	{
 		map GFX/Effects/skirata
                 blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
+        tcGen environment
 	}
         {
-                map models/players/ordo/Helmet_glow
+                map models/players/ordo/jetpack_glow
                 blendFunc GL_ONE GL_ONE
                 glow
                 rgbGen identity
         }
-}
 
-models/players/ordo/torso_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/ordo/torso_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/ordo/torso_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
-}
-
-models/players/ordo/hips_blue
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/ordo/hips_armor_blue.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    {
-        map models/players/ordo/hips_blue.tga
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	rgbGen lightingDiffuse
-    }
-
+    
 }
 
 models/players/ordo/jetpack_blue
@@ -322,84 +371,4 @@ q3map_nolightmap
         }
 
     
-}
-
-
-models/players/ordo/extragear
-{
-	q3map_nolightmap
-	q3map_onlyvertexlighting
-    {
-        map models/players/ordo/extragear.jpg
-        blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-    }
-    {
-        map gfx/effects/skirata
-        blendFunc GL_DST_COLOR GL_SRC_COLOR
-        tcGen environment
-    }
-    
-}
-
-models/players/ordo/snipergogs
-{
-    {
-		map models/players/ordo/snipergogs
-		blendFunc GL_ONE GL_ZERO
-        rgbGen lightingDiffuse
-	}
-	{
-		map GFX/Effects/skirata
-                blendFunc GL_DST_COLOR GL_SRC_COLOR
-                tcGen environment
-	}
-        {
-                map models/players/ordo/snipergogs_glow
-                blendFunc GL_ONE GL_ONE
-                glow
-                rgbGen identity
-        }
-}
-
-models/players/ordo/shoulder
-{
-    {
-        map models/players/ordo/Shoulder
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ordo/Shoulder_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/ordo/face
-{
-    {
-        map models/players/ordo/face
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ordo/face_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/ordo/comm
-{
-    {
-        map models/players/ordo/comm
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ordo/comm_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
 }
