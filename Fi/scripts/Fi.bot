@@ -1,7 +1,7 @@
 {
 name		"Fi"
 model		Fi
-color1		2
-saber1		"dual_1"
-personality	/botfiles/Aden.jkb
+color1		4
+saber1		"Single_1"
+personality	/botfiles/Fi.jkb
 }

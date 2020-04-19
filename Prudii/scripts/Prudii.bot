@@ -2,6 +2,6 @@
 name		"Prudii"
 model		Prudii
 color1		4
-saber1		"single_1"
+saber1		"Single_1"
 personality	/botfiles/Prudii.jkb
 }
