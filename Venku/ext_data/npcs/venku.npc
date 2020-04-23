@@ -32,7 +32,7 @@ venku
 	rank			captain
 	playerTeam		TEAM_ENEMY
 	enemyTeam		TEAM_PLAYER
-	class			CLASS_venku
+	class			CLASS_VENKU
 	walkSpeed		80
 	runSpeed		250
 	snd				venku

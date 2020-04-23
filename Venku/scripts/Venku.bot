@@ -1,7 +1,7 @@
 {
 name		"Venku"
 model		Venku
-color1		2
-saber1		"single_1"
+color1		4
+saber1		"Single_1"
 personality	/botfiles/Venku.jkb
 }

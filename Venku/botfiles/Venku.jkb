@@ -68,24 +68,21 @@ BotWeaponWeights
 	WP_DET_PACK		0
 }
 
-//Alora has no emotional attachments
-
-
 //all groups below here will be read in as chat sections
 BEGIN_CHAT_GROUPS
 
 Died
 {	
-	...
+	Copaani mirshmure'cye, vod?
 }
 
 Killed
 {
-	Hmph.
+	Haatyc or'arue jate'shya ori'sol aru'ike nuhaatyc
 }
 
 
 OrderAccepted
 {
-	Yes, right away.
+	Hukaat'kama
 }
