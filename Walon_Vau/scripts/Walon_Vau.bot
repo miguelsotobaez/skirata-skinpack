@@ -1,9 +1,0 @@
-{
-name		"Walon_Vau"
-model		Walon_Vau
-color1		0
-color2		0
-saber1		"single_1"
-saber2		"single_1"
-personality	/botfiles/Walon_Vau.jkb
-}
