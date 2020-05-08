@@ -1,82 +1,8 @@
-models/players/ruusaan/icon_default
-{
-	qer_editorimage	models/players/ruusaan/icon_over
-    {
-        map models/players/ruusaan/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ruusaan/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ruusaan/icon_default models/players/ruusaan/icon_default
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ruusaan/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
 
-models/players/ruusaan/icon_red
-{
-	qer_editorimage	models/players/ruusaan/icon_over
-    {
-        map models/players/ruusaan/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ruusaan/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ruusaan/icon_red models/players/ruusaan/icon_red
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ruusaan/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/ruusaan/icon_blue
-{
-	qer_editorimage	models/players/ruusaan/icon_over
-    {
-        map models/players/ruusaan/black
-        blendFunc GL_ONE GL_ZERO
-        tcMod scale 8 1
-    }
-    {
-        map models/players/ruusaan/over_energy
-        blendFunc GL_ONE GL_ONE
-        rgbGen wave sin 1 0.25 0 8
-        tcMod scroll 5 0.1
-        tcMod scale 1 1
-    }
-	{
-        animMap 0.5 models/players/ruusaan/icon_blue models/players/ruusaan/icon_blue
-        blendFunc GL_ONE GL_ONE
-    }
-    {
-        map models/players/ruusaan/icon_over
-        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-    }
-}
-
-models/players/ruusaan/Helm
+models/players/ruusaan/helmet
 {        
 	{
-		map models/players/ruusaan/Helm
+		map models/players/ruusaan/helmet
 		rgbGen lightingDiffuse
 	}
 	{
@@ -91,7 +17,7 @@ models/players/ruusaan/Helm
                 tcMod scroll 3 0.5
 	}
 	{
-		map models/players/ruusaan/Helm
+		map models/players/ruusaan/helmet
 		blendfunc blend
 		rgbGen lightingDiffuse
 	}
@@ -101,7 +27,7 @@ models/players/ruusaan/Helm
                 tcGen environment
 	}
         {
-                map models/players/ruusaan/Helmet_glow
+                map models/players/ruusaan/helmet_glow
                 blendFunc GL_ONE GL_ONE
                 glow
                 rgbGen identity
@@ -172,10 +98,10 @@ models/players/ruusaan/bracer
     
 }
 
-models/players/ruusaan/Helm_red
+models/players/ruusaan/helmet_red
 {        
 	{
-		map models/players/ruusaan/Helm_red
+		map models/players/ruusaan/helmet_red
 		rgbGen lightingDiffuse
 	}
 	{
@@ -190,7 +116,7 @@ models/players/ruusaan/Helm_red
                 tcMod scroll 3 0.5
 	}
 	{
-		map models/players/ruusaan/Helm_red
+		map models/players/ruusaan/helmet_red
 		blendfunc blend
 		rgbGen lightingDiffuse
 	}
@@ -200,7 +126,7 @@ models/players/ruusaan/Helm_red
                 tcGen environment
 	}
         {
-                map models/players/ruusaan/Helmet_glow
+                map models/players/ruusaan/helmet_glow
                 blendFunc GL_ONE GL_ONE
                 glow
                 rgbGen identity
@@ -270,10 +196,10 @@ models/players/ruusaan/bracer_red
     
 }
 
-models/players/ruusaan/Helm_blue
+models/players/ruusaan/helmet_blue
 {        
 	{
-		map models/players/ruusaan/Helm_blue
+		map models/players/ruusaan/helmet_blue
 		rgbGen lightingDiffuse
 	}
 	{
@@ -288,7 +214,7 @@ models/players/ruusaan/Helm_blue
                 tcMod scroll 3 0.5
 	}
 	{
-		map models/players/ruusaan/Helm_blue
+		map models/players/ruusaan/helmet_blue
 		blendfunc blend
 		rgbGen lightingDiffuse
 	}
@@ -298,7 +224,7 @@ models/players/ruusaan/Helm_blue
                 tcGen environment
 	}
         {
-                map models/players/ruusaan/Helmet_glow
+                map models/players/ruusaan/helmet_glow
                 blendFunc GL_ONE GL_ONE
                 glow
                 rgbGen identity
@@ -367,32 +293,4 @@ models/players/ruusaan/bracer_blue
         tcGen environment
     }
     
-}
-
-models/players/ruusaan/head
-{
-    {
-        map models/players/ruusaan/head
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ruusaan/head_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
-}
-
-models/players/ruusaan_head/hair
-{
-    {
-        map models/players/ruusaan_head/hair
-        rgbGen lightingDiffuse
-    }
-    {
-        map models/players/ruusaan_head/hair_spec
-        blendFunc GL_SRC_ALPHA GL_ONE
-        detail
-        alphaGen lightingSpecular
-    }
 }
