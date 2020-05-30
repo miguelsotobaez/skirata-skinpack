@@ -1,4 +1,5 @@
 head,models/players/gotab/helmet_blue.png
+crest,models/players/gotab/crest.jpg
 head_trf,models/players/gotab/helmet_blue.png
 torso,models/players/gotab/torso_blue.tga
 armor,models/players/gotab/armor_blue.tga

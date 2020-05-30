@@ -1,4 +1,5 @@
 head,models/players/corr/helmet_red.png
+crest,models/players/corr/crest.jpg
 head_trf,models/players/corr/helmet_red.png
 torso,models/players/corr/torso_red.tga
 armor,models/players/corr/armor_red.tga

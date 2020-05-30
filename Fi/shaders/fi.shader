@@ -372,3 +372,19 @@ q3map_nolightmap
 
     
 }
+
+models/players/fi/crest
+{
+q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+		map models/players/fi/crest
+		blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+                blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+}

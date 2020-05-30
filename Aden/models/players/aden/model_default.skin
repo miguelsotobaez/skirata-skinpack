@@ -1,5 +1,5 @@
 head,models/players/aden/helmet.png
-head_trf,models/players/aden/helmet.png
+crest,models/players/aden/crest.jpg
 torso,models/players/aden/torso.tga
 armor,models/players/aden/armor.tga
 jetpack,models/players/aden/jetpack.jpg

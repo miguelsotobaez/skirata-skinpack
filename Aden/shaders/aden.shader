@@ -372,3 +372,20 @@ q3map_nolightmap
 
     
 }
+
+
+models/players/aden/crest
+{
+q3map_nolightmap
+	q3map_onlyvertexlighting
+    {
+		map models/players/aden/crest
+		blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+	}
+	{
+		map GFX/Effects/skirata
+                blendFunc GL_DST_COLOR GL_SRC_COLOR
+        tcGen environment
+	}
+}

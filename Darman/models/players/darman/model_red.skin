@@ -1,4 +1,5 @@
 head,models/players/darman/helmet_red.png
+crest,models/players/darman/crest.jpg
 head_trf,models/players/darman/helmet_red.png
 torso,models/players/darman/torso_red.tga
 armor,models/players/darman/armor_red.tga

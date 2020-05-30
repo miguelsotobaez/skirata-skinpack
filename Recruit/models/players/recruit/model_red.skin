@@ -1,4 +1,5 @@
 head,models/players/recruit/helmet_red.png
+crest,models/players/recruit/crest.jpg
 head_trf,models/players/recruit/helmet_red.png
 torso,models/players/recruit/torso_red.tga
 armor,models/players/recruit/armor_red.tga

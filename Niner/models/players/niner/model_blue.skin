@@ -1,4 +1,5 @@
 head,models/players/niner/helmet_blue.png
+crest,models/players/niner/crest.jpg
 head_trf,models/players/niner/helmet_blue.png
 torso,models/players/niner/torso_blue.tga
 armor,models/players/niner/armor_blue.tga
